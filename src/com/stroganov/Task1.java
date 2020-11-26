@@ -8,17 +8,6 @@ import java.util.List;
 public class Task1 {
 
 
-    private String fileReadPath = "task.txt";
-    private String fileWritePath = "ksat.txt";
-
-    private List<String> stringList = new ArrayList<>();
-
-    public void setFileReadWritePath(String fileReadPath, String fileWritePath) {
-
-        this.fileReadPath = fileReadPath;
-        this.fileWritePath = fileWritePath;
-    }
-
     public static boolean reverseFile(String filePathToRead, String filePathToWrite) {
 
         boolean result = true;

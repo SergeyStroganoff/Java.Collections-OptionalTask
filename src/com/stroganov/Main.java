@@ -18,6 +18,8 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Task1.reverseFile("task.txt","ksat.txt");
+        if(Task1.reverseFile("task.txt","ksat.txt")) System.out.println("копирование файла завершено");
+
+
     }
 }
