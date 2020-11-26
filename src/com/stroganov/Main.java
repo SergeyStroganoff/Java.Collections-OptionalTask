@@ -13,6 +13,9 @@ Optional Task
         8. Задан файл с текстом на английском языке. Выделить все различные слова. Слова, отличающиеся только регистром букв, считать одинаковыми. Использовать класс HashSet.
 */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,6 +23,10 @@ public class Main {
 
         if(Task1.reverseFile("task.txt","ksat.txt")) System.out.println("копирование файла завершено");
 
+        List<String> newFileList = Task3.readAllSubFiles("C:\\web");
+        for (String file:newFileList) {
+            System.out.println(file);
 
+        }
     }
 }
