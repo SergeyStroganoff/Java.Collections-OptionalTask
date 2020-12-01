@@ -13,20 +13,23 @@ Optional Task
         8. Задан файл с текстом на английском языке. Выделить все различные слова. Слова, отличающиеся только регистром букв, считать одинаковыми. Использовать класс HashSet.
 */
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
-        if(Task1.reverseFile("task.txt","ksat.txt")) System.out.println("копирование файла завершено");
+
+        if (Task1.reverseFile("task.txt", "ksat.txt")) System.out.println("копирование файла завершено");
+
+        Task2.reverseStringStack();
 
         List<String> newFileList = Task3.readAllSubFiles("C:\\web");
-        for (String file:newFileList) {
+        for (String file : newFileList) {
             System.out.println(file);
-
         }
+        Task7.checkString("{(sf<sdfs>)dfsdf}");
+
+
     }
 }

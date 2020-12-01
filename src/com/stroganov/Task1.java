@@ -3,7 +3,6 @@ package com.stroganov;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class Task1 {
 
@@ -44,7 +43,6 @@ public class Task1 {
             }
 
         }
-
 
         return result;
 

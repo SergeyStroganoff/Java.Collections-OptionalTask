@@ -14,12 +14,12 @@ public class Task3 {
 
         if (baseDirectory.isDirectory()) {
             for (File file : baseDirectory.listFiles()) {
-                //fileList.add(file.getName());
+
                 if (file.isFile()) {
-                   // System.out.println(file.getName() + " файл");
-                    fileList.add(file.getName()+ " файл");
+
+                    fileList.add(file.getName() + " файл");
                 } else {
-                    fileList.add(file.getName()+ " каталог");
+                    fileList.add(file.getName() + " каталог");
                     fileList.addAll(readAllSubFiles(file));
                 }
             }
